@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="operatorEkle('%')" class="operator" id="mod">%</button>
+            <button onclick="sayiEkle('7')" id="seven">7</button>
+            <button onclick="sayiEkle('8')" id="eight">8</button>
+            <button onclick="sayiEkle('9')" id="nine">9</button>
+            <button onclick="operatorEkle('*')" class="operator" id="times">x</button>
+            <button onclick="operatorEkle('/')" class="operator" id="divide">/</button>
+            <button onclick="sayiEkle('4')" id="four">4</button>
+            <button onclick="sayiEkle('5')" id="five">5</button>
+            <button onclick="sayiEkle('6')" id="six">6</button>
+            <button onclick="operatorEkle('-')" class="operator" id="subtract">-</button>
+            <button onclick="clearSonuc()" id="delete">AC</button>
+            <button onclick="sayiEkle('1')" id="one">1</button>
+            <button onclick="sayiEkle('2')" id="two">2</button>
+            <button onclick="sayiEkle('3')" id="three">3</button>
+             <button onclick="operatorEkle('+')" class="operator" id="add">+</button>
+            <button onclick="sil()" id="c">C</button>
+            <button onclick="sayiEkle('0')" id="zero">0</button>
+            <button onclick="operatorEkle('.')" id="dot">.</button>
+            <button  id="comma">,</button>
+            <button onclick="hesapla()" class="operator" id="equal">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
